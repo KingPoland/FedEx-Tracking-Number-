@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FedEx Tracking - Mock Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #4d148c;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    th {
+      background-color: #f1f1f1;
+    }
+    .status {
+      color: green;
+      font-weight: bold;
+    }
+    .location {
+      font-style: italic;
+    }
+  
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      table, th, td {
+        font-size: 14px;
+      }
+    }
+    .print-button {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #4d148c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    </style>
+    
+</head>
+<body>
+  <div class="container">
+    <button class="print-button" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    <h1>FedEx Tracking Information</h1>
+
+    <div class="section">
+      <strong>✅ Tracking Number:</strong> 1034 5678 9012
+    </div>
+
+    <div class="section">
+      <strong>🚚 Status:</strong> <span class="status">In Transit</span>
+    </div>
+
+    <div class="section">
+      <strong>📍 Current Location:</strong> <span class="location">Memphis, TN, USA – FedEx Hub</span>
+    </div>
+
+    <div class="section">
+      <strong>📅 Estimated Delivery Date:</strong> Wednesday, July 16, 2025 – By 8:00 PM
+    </div>
+
+    <div class="section">
+      <h2>📦 Package Information</h2>
+      <table>
+        <tr><th>Field</th><th>Details</th></tr>
+        <tr><td>Sender</td><td>Tesla Motors Inc., Texas, USA</td></tr>
+        <tr><td>Shipment Date</td><td>July 10, 2025</td></tr>
+        <tr><td>Service Type</td><td>International Priority</td></tr>
+        <tr><td>Package Weight</td><td>1,625 kg</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>🚛 Shipment Progress</h2>
+      <table>
+        <tr><th>Date</th><th>Location</th><th>Status</th></tr>
+        <tr><td>Jul 10, 2025</td><td>Austin, TX, USA</td><td>Package received by FedEx</td></tr>
+        <tr><td>Jul 11, 2025</td><td>Dallas, TX, USA</td><td>Departed FedEx facility</td></tr>
+        <tr><td>Jul 12, 2025</td><td>Memphis, TN, USA</td><td>Arrived at FedEx Hub</td></tr>
+        <tr><td>Jul 13, 2025</td><td>Memphis, TN, USA</td><td>In transit</td></tr>
+        <tr><td>Jul 14, 2025</td><td>Paris, France</td><td>Clearance in progress</td></tr>
+        <tr><td>Jul 15, 2025</td><td>Berlin, Germany</td><td>At local FedEx facility</td></tr>
+        <tr><td>Jul 16, 2025</td><td>Berlin, Germany</td><td>Out for delivery</td></tr>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>
